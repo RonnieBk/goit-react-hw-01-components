@@ -1,10 +1,9 @@
 import PropTypes from 'prop-types';
 import css from './FriendListItem.module.css';
 
-const FriendListItem = ({ avatar, name, isOnline, id }) => {
-  console.log(id);
+const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
-    <li key={id} className={css.item}>
+    <li className={css.item}>
       {isOnline ? (
         <span className={css.isOnline}></span>
       ) : (
